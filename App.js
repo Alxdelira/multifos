@@ -1,11 +1,11 @@
 import { SafeAreaView, StatusBar} from 'react-native';
-import Cesta from './src/telas/Cesta';
+import Login from './src/telas/Login';
 
 export default function App() {
   return (
     <SafeAreaView>
       <StatusBar />
-      <Cesta />
+      <Login />
     </SafeAreaView>
   );
 }

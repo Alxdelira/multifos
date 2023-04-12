@@ -5,47 +5,46 @@ import vaca from '../../assets/vaca.png'
 
 const width = Dimensions.get('screen').width;
 
-export default function Cesta() {
+export default function Login() {
     return <>
-        <Image source={vaca} style={estilos.vaca} />
-        <Text style={estilos.titulo}>Multifos</Text>
-        <Text style={estilos.titulosecondary}>Nuttrição Animal</Text>
         <View style={estilos.container}>
-            <TextInput style={estilos.input}/>
+            <Text style={estilos.titulo}>Multifos</Text>
+            <Text style={estilos.titulosecondary}>Nuttrição Animal</Text>
+            <Text style={estilos.user}>Usuario</Text>
+            <TextInput style={estilos.input} />
         </View>
-
+        <Image source={vaca} style={estilos.vaca} />
     </>
 }
 
 const estilos = StyleSheet.create({
     container: {
-        position: "absolute"
+        display: "flex",
+        alignItems: "center"
+
     },
     vaca: {
         width: '100%',
         height: 640 / 400 * width,
     },
     titulo: {
-        width: "100%",
-        display: "flex",
-        justifyContent: "center",
-        position: "absolute",
-        textAlign: "center",
-        fontSize: 100,
+        fontSize: 75,
         color: "green",
         fontWeight: "bold",
 
     },
     titulosecondary: {
-        position: "absolute"
+
+    },
+    user: {
 
     },
     input: {
-        height: 20,
+        height: 50,
         margin: 12,
         borderWidth: 1,
         padding: 10,
-        width: "100%"
+        width: 400
 
     }
 })
